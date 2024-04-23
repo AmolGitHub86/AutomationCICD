@@ -4,6 +4,7 @@ import java.time.Duration;
 
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.support.PageFactory;
 
 public class SignIn{
 	WebDriver driver;
@@ -13,7 +14,7 @@ public class SignIn{
 	public SignIn(WebDriver driver)
 	{
 		this.driver= driver;
-		//PageFactory.initElements(driver, this);
+		PageFactory.initElements(driver, this);
 	}
 
 
